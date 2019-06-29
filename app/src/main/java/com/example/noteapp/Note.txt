@@ -1,0 +1,16 @@
+package com.example.noteapp
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "note_table")
+data class Note (
+    @PrimaryKey(autoGenerate = true)
+    private var id : Long?,
+    private var title : String,
+    private var description : String,
+    private var priority : Int
+
+){
+
+}
